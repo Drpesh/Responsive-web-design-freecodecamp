@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label" for="name-label">Full Name <input id="name" type="text" placeholder="Full Name" required></label>
+      <label id="email-label" for="email-label">Valid Email <input id="email" type="email" pattern="[a-zA-Z0-9]" min="8" placeholder="Email" required></label>
+      <label id="number-label" for="number-label"><input id="number" type="number" pattern="[0-9]+" min="9" max="11" placeholder="Number" value="number">
+      <label for="dropdown"><select id="dropdown">
+        <option>Nigeria</option>
+        <option>usa</option>
+        <option>Ghana</option>
+        </select></label>
+      <label for="male">Male <input id="male" name="sex" type="radio" value="sex"></label>
+      <label for="female">Female <input id="female" name="sex" type="radio" value="sex"></label>
+      <label for="access">Full Payment <input type="checkbox" value="payment"></label>
+      <label for="access">Installmentally <input type="checkbox" value="payment"></label>
+      <label for="access">Pledge <input type="checkbox" value="payment"></label>
+      <label for="access">Coupon <input type="checkbox" value="payment"></label>
+      <label for="access">Bank Transfer<input type="checkbox" value="payment"></label>
+      <label for="textarea"> Additional Comment <textarea></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
